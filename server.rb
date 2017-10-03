@@ -6,11 +6,22 @@ get '/home' do
 end
 
 get '/portfolio' do
-  # instructions for what to do when user visits '/home' will go here
   erb :gallery
 end
 
 get '/about' do
-  # instructions for what to do when user visits '/home' will go here
+  @skills = ['git', 'HTML', 'CSS', 'Ruby']
+  @interests = ['cats', 'art', 'music', 'films', 'coffee']
   erb :about
+end
+
+get '/favourites' do
+  @fav_links = [
+    'https://www.producthunt.com/',
+    'https://www.lapatilla.com/',
+    'https://thepiratebay.org/',
+    'https://github.com/', 
+    'https://bitmaker.co/'
+  ]
+  erb :favourites
 end
