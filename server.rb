@@ -20,7 +20,7 @@ get '/favourites' do
     'https://www.producthunt.com/',
     'https://www.lapatilla.com/',
     'https://thepiratebay.org/',
-    'https://github.com/', 
+    'https://github.com/',
     'https://bitmaker.co/'
   ]
   erb :favourites
